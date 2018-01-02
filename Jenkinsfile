@@ -11,7 +11,7 @@ pipeline {
     post {
         always {
             archiveArtifacts 'petclinic-webapp/target/petclinic.war'
-            junit 'petclinic-webapp/surefire-reports/*.xml'
+            junit 'petclinic-webapp/target/surefire-reports/*.xml'
         }
     }
 }
