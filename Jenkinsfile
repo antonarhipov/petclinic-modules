@@ -7,4 +7,10 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            archiveArtifacts 'petclinic-webapp/target/petclinic.war'
+        }
+    }
 }
