@@ -6,6 +6,12 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+
+        stage('Sanity check') {
+            steps {
+                input "Does it look OK?"
+            }
+        }
     }
 
     post {
