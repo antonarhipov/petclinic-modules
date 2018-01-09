@@ -5,6 +5,7 @@ import org.springframework.validation.Errors;
 
 public class MyValidator {
  // test build trigger
+  // blah blah blah
   public void validate(Owner owner, Errors errors) {
     String name = owner.getFirstName();
     if (name != null && !name.equals("Anton")) {
