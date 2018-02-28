@@ -7,11 +7,11 @@ pipeline {
             }
         }
 
-        stage('Sanity check') {
-            steps {
-                input "Does it look OK?"
-            }
-        }
+        //stage('Sanity check') {
+        //  steps {
+        //    input "Does it look OK?"
+        // .}
+        //}
     }
 
     post {
