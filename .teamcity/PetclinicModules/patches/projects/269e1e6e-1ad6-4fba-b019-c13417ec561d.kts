@@ -60,7 +60,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("aws.region.name", "us-east-1")
                 param("description", "")
                 param("cloud-code", "awsecs")
-                param("enabled", "false")
+                param("enabled", "true")
                 param("agentPushPreset", "")
                 param("profileInstanceLimit", "")
                 param("profileId", "awsecs-2")
