@@ -16,19 +16,16 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 type = "CloudImage"
                 id = "PROJECT_EXT_6"
                 param("cpuReservationLimit", "90")
-                param("cluster", "")
-                param("agentNamePrefix", "")
-                param("profileId", "awsecs-2")
+                param("cluster", "default")
                 param("agent_pool_id", "-2")
                 param("subnets", """
-                    subnet-tc1
-                    subnet-tc2
+                    subnet-c24e129f
+                    subnet-930ede9c
                 """.trimIndent())
                 param("taskDefinition", "teamcity-agent")
                 param("maxInstances", "3")
                 param("source-id", "1")
                 param("launchType", "FARGATE")
-                param("taskGroup", "")
             }
         }
         add {
@@ -40,7 +37,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("profileServerUrl", "")
                 param("system.cloud.profile_id", "awsecs-2")
                 param("total-work-time", "")
-                param("aws.region.name", "ca-central-1")
+                param("aws.region.name", "us-east-1")
                 param("description", "")
                 param("cloud-code", "awsecs")
                 param("enabled", "true")
