@@ -40,7 +40,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("profileServerUrl", "")
                 param("system.cloud.profile_id", "awsecs-2")
                 param("total-work-time", "")
-                param("aws.region.name", "us-east-2")
+                param("aws.region.name", "us-west-1")
                 param("description", "")
                 param("cloud-code", "awsecs")
                 param("enabled", "true")
