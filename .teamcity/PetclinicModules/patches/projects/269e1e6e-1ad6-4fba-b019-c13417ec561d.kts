@@ -41,7 +41,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                     subnet-930ede9c
                     subnet-c24e129f
                 """.trimIndent())
-                param("taskDefinition", "teamcity-agent:1")
+                param("taskDefinition", "teamcity-agent:2")
                 param("maxInstances", "3")
                 param("source-id", "0")
                 param("launchType", "FARGATE")
