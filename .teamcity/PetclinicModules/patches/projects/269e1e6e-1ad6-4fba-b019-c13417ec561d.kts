@@ -32,7 +32,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
             feature {
                 type = "CloudImage"
                 id = "PROJECT_EXT_8"
-                param("cpuReservationLimit", "90")
+                param("cpuReservationLimit", "")
                 param("cluster", "default")
                 param("agentNamePrefix", "")
                 param("profileId", "awsecs-2")
@@ -41,7 +41,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                     subnet-930ede9c
                     subnet-c24e129f
                 """.trimIndent())
-                param("taskDefinition", "teamcity-agent:3")
+                param("taskDefinition", "teamcity-agent")
                 param("maxInstances", "3")
                 param("source-id", "0")
                 param("launchType", "FARGATE")
