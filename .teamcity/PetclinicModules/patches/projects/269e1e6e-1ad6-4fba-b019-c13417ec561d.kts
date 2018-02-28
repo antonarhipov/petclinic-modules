@@ -37,10 +37,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("agentNamePrefix", "")
                 param("profileId", "awsecs-2")
                 param("agent_pool_id", "-2")
-                param("subnets", """
-                    subnet-930ede9c
-                    subnet-c24e129f
-                """.trimIndent())
+                param("subnets", "subnet-930ede9c")
                 param("taskDefinition", "teamcity-agent")
                 param("maxInstances", "3")
                 param("source-id", "0")
