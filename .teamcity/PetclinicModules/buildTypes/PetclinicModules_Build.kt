@@ -9,6 +9,8 @@ object PetclinicModules_Build : BuildType({
     id = "PetclinicModules_Build"
     name = "Build"
 
+    artifactRules = "petclinic-webapp/target/petclinic.war"
+
     vcs {
         root(PetclinicModules.vcsRoots.PetclinicModules_HttpsGithubComAntonarhipovPetclinicModulesRefsHeadsMaster)
 
