@@ -35,6 +35,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("cpuReservationLimit", "")
                 param("cluster", "default")
                 param("agentNamePrefix", "")
+                param("assignPublicIp", "true")
                 param("profileId", "awsecs-2")
                 param("agent_pool_id", "-2")
                 param("subnets", "subnet-930ede9c")
