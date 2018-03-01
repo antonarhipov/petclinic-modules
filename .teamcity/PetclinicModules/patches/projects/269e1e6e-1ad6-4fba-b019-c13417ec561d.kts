@@ -31,7 +31,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
         add {
             feature {
                 type = "CloudImage"
-                id = "PROJECT_EXT_8"
+                id = "PROJECT_EXT_7"
                 param("cpuReservationLimit", "")
                 param("cluster", "default")
                 param("agentNamePrefix", "")
@@ -41,7 +41,7 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 param("subnets", "subnet-930ede9c")
                 param("taskDefinition", "teamcity-agent")
                 param("maxInstances", "3")
-                param("source-id", "0")
+                param("source-id", "1")
                 param("launchType", "FARGATE")
                 param("taskGroup", "")
             }
