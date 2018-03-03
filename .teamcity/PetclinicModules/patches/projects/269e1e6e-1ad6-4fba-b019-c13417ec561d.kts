@@ -48,6 +48,22 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
         }
         add {
             feature {
+                type = "CloudImage"
+                id = "PROJECT_EXT_8"
+                param("cluster", "default")
+                param("agentNamePrefix", "ta3")
+                param("assignPublicIp", "true")
+                param("profileId", "awsecs-2")
+                param("agent_pool_id", "-2")
+                param("subnets", "subnet-930ede9c")
+                param("taskDefinition", "teamcity-agent:3")
+                param("maxInstances", "2")
+                param("source-id", "2")
+                param("launchType", "FARGATE")
+            }
+        }
+        add {
+            feature {
                 type = "CloudProfile"
                 id = "awsecs-2"
                 param("secure:aws.secret.access.key", "credentialsJSON:b7d16088-a5c7-4bad-b0f8-6acec3833bff")
