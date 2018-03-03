@@ -59,40 +59,6 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
         }
         add {
             feature {
-                type = "CloudImage"
-                id = "PROJECT_EXT_9"
-                param("key-pair-name", "awsmicro")
-                param("use-spot-instances", "false")
-                param("security-group-ids", "sg-f881a590,")
-                param("profileId", "amazon-1")
-                param("ebs-optimized", "false")
-                param("instance-type", "c3.large")
-                param("source-id", "i-44a67639")
-            }
-        }
-        add {
-            feature {
-                type = "CloudProfile"
-                id = "amazon-1"
-                param("profileServerUrl", "")
-                param("secure:access-id", "credentialsJSON:8da96023-23b5-46da-becf-fec5b205dff8")
-                param("total-work-time", "")
-                param("description", "")
-                param("cloud-code", "amazon")
-                param("enabled", "true")
-                param("max-running-instances", "3")
-                param("agentPushPreset", "")
-                param("profileId", "amazon-1")
-                param("name", "ec2")
-                param("next-hour", "")
-                param("secure:secret-key", "credentialsJSON:b7d16088-a5c7-4bad-b0f8-6acec3833bff")
-                param("region", "us-east-1")
-                param("terminate-idle-time", "30")
-                param("not-checked", "")
-            }
-        }
-        add {
-            feature {
                 type = "CloudProfile"
                 id = "awsecs-2"
                 param("secure:aws.secret.access.key", "credentialsJSON:b7d16088-a5c7-4bad-b0f8-6acec3833bff")
