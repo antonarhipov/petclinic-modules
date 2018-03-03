@@ -51,15 +51,10 @@ changeProject("269e1e6e-1ad6-4fba-b019-c13417ec561d") {
                 type = "CloudImage"
                 id = "PROJECT_EXT_8"
                 param("cluster", "default")
-                param("agentNamePrefix", "ta3")
-                param("assignPublicIp", "true")
-                param("profileId", "awsecs-2")
                 param("agent_pool_id", "-2")
-                param("subnets", "subnet-930ede9c")
-                param("taskDefinition", "teamcity-agent:3")
-                param("maxInstances", "2")
+                param("taskDefinition", "resource-name")
                 param("source-id", "2")
-                param("launchType", "FARGATE")
+                param("launchType", "EC2")
             }
         }
         add {
