@@ -29,6 +29,6 @@ object PetclinicModules_Build : BuildType({
     }
 
     requirements {
-        exists("system.ec2.ami-id")
+        doesNotExist("system.ec2.ami-id")
     }
 })
