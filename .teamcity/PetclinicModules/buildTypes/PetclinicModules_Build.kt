@@ -27,4 +27,8 @@ object PetclinicModules_Build : BuildType({
         vcs {
         }
     }
+
+    requirements {
+        exists("system.ec2.ami-id")
+    }
 })
