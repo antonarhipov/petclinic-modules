@@ -28,7 +28,7 @@ object PetclinicModules_Build : BuildType({
     }
 
     requirements {
-        equals("system.ec2.ami-id", "ami-123123", "RQ_1")
+        equals("system.ec2.ami-id", "ami-1231231", "RQ_1")
     }
     
     disableSettings("RQ_1")
