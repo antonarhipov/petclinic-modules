@@ -4,8 +4,7 @@ import org.springframework.samples.petclinic.Owner;
 import org.springframework.validation.Errors;
 
 public class MyValidator {
- // test build trigger
- // test build trigger once again
+ // test build in branch
 
   public void validate(Owner owner, Errors errors) {
     String name = owner.getFirstName();
