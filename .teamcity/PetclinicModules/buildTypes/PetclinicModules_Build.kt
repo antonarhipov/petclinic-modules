@@ -13,6 +13,7 @@ object PetclinicModules_Build : BuildType({
 
     vcs {
         root(PetclinicModules.vcsRoots.PetclinicModules_HttpsGithubComAntonarhipovPetclinicModulesRefsHeadsMaster)
+        root(PetclinicModules.vcsRoots.PetclinicModules_PetclinicModulesWithBranches)
 
     }
 
