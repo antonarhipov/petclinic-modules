@@ -36,6 +36,44 @@ object Project : Project({
             type = "active_storage"
             param("active.storage.feature.id", "PROJECT_EXT_3")
         }
+        feature {
+            type = "CloudProfile"
+            id = "awsecs-2"
+            param("secure:aws.secret.access.key", "credentialsJSON:b7d16088-a5c7-4bad-b0f8-6acec3833bff")
+            param("aws.external.id", "TeamCity-server-63ec393d-3f31-4b6e-bf2a-035ee247f58e")
+            param("profileServerUrl", "")
+            param("system.cloud.profile_id", "awsecs-2")
+            param("total-work-time", "")
+            param("aws.region.name", "us-east-1")
+            param("description", "")
+            param("cloud-code", "awsecs")
+            param("enabled", "true")
+            param("agentPushPreset", "")
+            param("profileInstanceLimit", "")
+            param("profileId", "awsecs-2")
+            param("name", "esc")
+            param("aws.access.key.id", "AKIAJYULYIVA4MVKZ2UA")
+            param("aws.credentials.type", "aws.access.keys")
+            param("next-hour", "")
+            param("terminate-idle-time", "30")
+            param("aws.iam.role.arn", "")
+        }
+        feature {
+            type = "CloudImage"
+            id = "PROJECT_EXT_7"
+            param("cpuReservationLimit", "")
+            param("cluster", "default")
+            param("agentNamePrefix", "")
+            param("assignPublicIp", "true")
+            param("profileId", "awsecs-2")
+            param("agent_pool_id", "-2")
+            param("subnets", "subnet-930ede9c")
+            param("taskDefinition", "teamcity-agent")
+            param("maxInstances", "3")
+            param("source-id", "1")
+            param("launchType", "FARGATE")
+            param("taskGroup", "")
+        }
         versionedSettings {
             id = "PROJECT_EXT_5"
             mode = VersionedSettings.Mode.ENABLED
