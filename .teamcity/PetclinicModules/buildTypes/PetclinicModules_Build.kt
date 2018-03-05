@@ -13,7 +13,6 @@ object PetclinicModules_Build : BuildType({
 
     vcs {
         root(PetclinicModules.vcsRoots.PetclinicModules_PetclinicModulesWithBranches)
-
     }
 
     steps {
