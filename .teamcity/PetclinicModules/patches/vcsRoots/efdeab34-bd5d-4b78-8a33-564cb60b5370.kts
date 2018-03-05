@@ -17,6 +17,7 @@ create("269e1e6e-1ad6-4fba-b019-c13417ec561d", GitVcsRoot({
     branchSpec = "+:*"
     authMethod = password {
         userName = "antonarhipov"
+        password = "credentialsJSON:d9801888-f50b-4e9b-9132-1aafd4f3191b"
     }
 }))
 
