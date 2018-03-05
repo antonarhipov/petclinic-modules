@@ -12,7 +12,6 @@ object PetclinicModules_Build : BuildType({
     artifactRules = "petclinic-webapp/target/petclinic.war"
 
     vcs {
-        root(PetclinicModules.vcsRoots.PetclinicModules_HttpsGithubComAntonarhipovPetclinicModulesRefsHeadsMaster)
         root(PetclinicModules.vcsRoots.PetclinicModules_PetclinicModulesWithBranches)
 
     }
