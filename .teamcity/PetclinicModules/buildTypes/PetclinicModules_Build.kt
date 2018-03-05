@@ -5,20 +5,20 @@ import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
 
 object PetclinicModules_Build : BuildType({
-    uuid = "53d302ca-3298-47c8-9900-367943c102d0"
+    uuid = "9131f8c0-3464-41d8-b4d9-0ef16fcb14c2"
     id = "PetclinicModules_Build"
     name = "Build"
 
-    artifactRules = "petclinic-webapp/target/petclinic.war"
-
     vcs {
-        root(PetclinicModules.vcsRoots.PetclinicModules_PetclinicModulesWithBranches)
+        root(PetclinicModules.vcsRoots.PetclinicModules_HttpsGithubComAntonarhipovPetclinicModulesRefsHeadsMaster)
+
     }
 
     steps {
         maven {
-            goals = "clean package"
-            mavenVersion = defaultProvidedVersion()
+            goals = "clean test"
+            mavenVersion = custom {
+            }
         }
     }
 
@@ -28,8 +28,8 @@ object PetclinicModules_Build : BuildType({
     }
 
     requirements {
-        equals("system.ec2.ami-id", "ami-fd6c94eb", "RQ_1")
+        exists("env.AGENT_NAME", "RQ_3")
     }
     
-    disableSettings("RQ_1")
+    disableSettings("RQ_3")
 })
