@@ -29,6 +29,8 @@ object PetclinicModules_Build : BuildType({
     }
 
     requirements {
-        doesNotExist("system.ec2.ami-id")
+        doesNotExist("system.ec2.ami-id", "RQ_1")
     }
+    
+    disableSettings("RQ_1")
 })
